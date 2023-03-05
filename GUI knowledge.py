@@ -6,7 +6,7 @@ from tkinter import messagebox
 import csv
 def writecsv(datalist):
     with open('data.csv','a',encoding='utf-8',newline='')as file:
-        fw=csv.wrtiter(file)
+        fw=csv.writer(file)
         fw.writerow(datalist)
 
 def readcsv():
